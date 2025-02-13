@@ -13,7 +13,7 @@ from functools import wraps
 load_dotenv()
 
 auth = Flask(__name__)
-CORS(auth, origins="http://localhost:3000", supports_credentials=True)
+CORS(auth, origins="https://cheemba-web-app.vercel.app/login", supports_credentials=True)
 
 auth.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://postgres:yezu@localhost:5432/cheemba'
 auth.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
